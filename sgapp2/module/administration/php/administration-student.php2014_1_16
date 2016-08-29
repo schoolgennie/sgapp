@@ -1,0 +1,389 @@
+<?
+check_logged_in_for_myaccount('school');
+
+isset($_GET['action'])?$action=$_GET['action']:$action='list';
+isset($_GET['section'])?$section=$_GET['section']:$section='list';
+isset($_GET['student_id'])?$student_id=$_GET['student_id']:$student_id='0';
+isset($_GET['p'])?$p=$_GET['p']:$p='1';
+
+#school unique id
+$school_id=$login_session->get_user_id();
+
+#fetch school details
+$schoolDetail=get_object_by_query('school','school_id='.$school_id);
+
+#count no of student account
+$totalStudent=get_object_by_query_count('student','school_id="'.$school_id.'"');
+
+#fetch class list
+$classList=get_all_record_by_query('class','school_id="'.$school_id.'" and class_is_active=1 order by class_position');
+
+if($student_id):
+  # get student details
+  $studentDetails =get_object_by_query('student','student_id="'.$student_id.'" and school_id="'.$school_id.'"');
+  #authenticate user
+  if(!$studentDetails): #if no
+            $login_session->pass_msg[]='url does not exist';
+	        $login_session->set_pass_msg();
+	        $login_session->set_success();
+	        Redirect(make_url('administration-student'));
+  endif;
+endif;
+
+
+function checkValidationImportStudentList($val)
+{
+                $validation=new user_validation();
+				$validation->add('student_email_id', 'req','email id');	
+				$validation->add('student_email_id', 'email','email id');	
+				$validation->add('student_first_name', 'req','first name');	
+				$validation->add('student_first_name', 'alpha','first name');	
+				$validation->add('student_last_name', 'req','last name');	
+				$validation->add('student_last_name', 'alpha','last name');
+				$validation->add('class_id', 'req','class');	
+				$validation->add('student_gender', 'req','gender');
+				$validation->add('student_father_first_name', 'req','father first name');	
+				$validation->add('student_father_first_name', 'alpha','father first name');	
+				$validation->add('student_father_last_name', 'req','father last name');	
+				$validation->add('student_father_last_name', 'alpha','father last name');
+				$validation->add('student_father_email_id', 'email','father email id');
+				$validation->add('student_mother_first_name', 'req','mother first name');	
+				$validation->add('student_mother_first_name', 'alpha','mother first name');	
+				$validation->add('student_mother_last_name', 'req','mother last name');	
+				$validation->add('student_mother_last_name', 'alpha','mother last name');	
+				$validation->add('student_mother_email_id', 'email','mother email id');
+									
+				# check validations.
+				$valid= new valid();
+				if($valid->validate($val, $validation->get())):
+				  return true;
+				else:
+				  return $valid->error;  
+				endif;
+}
+function checkEmailIdExistImportStudentList($student_email_id)
+{
+    $login_session =new user_session();
+	$school_id=$login_session->get_school_unique_id();
+    $checkEmailId=get_object_by_query('student','student_email_id="'.$student_email_id.'" and school_id="'.$school_id.'"');
+	
+	if(!$checkEmailId):
+			return true;
+	else:
+				  return 'User Id already Exist';  		
+	endif;
+}
+function checkClassExistImportStudentList($class_id)
+{
+
+  $login_session =new user_session();
+  $school_id=$login_session->get_school_unique_id();
+  $checkClass=get_object_by_query('class','school_id="'.$school_id.'" and class_id="'.$class_id.'" and class_is_active=1');
+  if($checkClass):
+			return true;
+  else:
+			return 'Class does not exist';  			
+  endif;
+}
+
+function checkAdmissionNoExistImportStudentList($student_admission_no)
+{
+  $login_session =new user_session();
+  $school_id=$login_session->get_school_unique_id();
+  $checkList=get_object_by_query('student','student_admission_no="'.$student_admission_no.'" and school_id="'.$school_id.'"');
+  if(!$student_admission_no || !$checkList):
+			return true;
+  else:
+		    return 'Admission no. already Exist';  			
+  endif;
+}
+
+
+
+#handle actions here.
+switch ($action):
+	case'list':
+		#search parameter
+		$keyword=(isset($_REQUEST['keyword']) && $_REQUEST['keyword']!='')?$_REQUEST['keyword']:'';
+		$class=(isset($_REQUEST['class']) && $_REQUEST['class']!='')?$_REQUEST['class']:'';
+		$where=($class)?" and class_id in (".implode(',',$class).")":'';
+		$where.=($keyword)?" and (student_first_name LIKE '%".$_REQUEST['keyword']."%' or student_last_name LIKE '%".$_REQUEST['keyword']."%' or student_email_id LIKE '%".$_REQUEST['keyword']."%')":'';
+		$qstring=($keyword)?'keyword='.$keyword:'';
+		
+		 #fetch class list
+         $studentList=get_all_object_by_query('student','school_id="'.$school_id.'"'.$where.'  order by student_is_active desc');
+		 #fetch class list
+         $studentErrorList=get_all_record_by_query('student_error_records','school_id="'.$school_id.'"');
+		break;
+	case'insert':
+	     if($totalStudent>=$schoolDetail->school_student_create_limit):
+		 Redirect(make_url('administration-student'));
+		 endif;
+		 
+		 
+	     # add class
+		if(isset($_POST['validate']) && $_POST['validate']=='Register'):
+		        # add validations
+				$validation=new user_validation();
+				$validation->add('student_email_id', 'req','email id');	
+				$validation->add('student_email_id', 'email','email id');	
+				$validation->add('student_first_name', 'req','first name');	
+				$validation->add('student_first_name', 'alpha','first name');	
+				$validation->add('student_last_name', 'req','last name');	
+				$validation->add('student_last_name', 'alpha','last name');
+				$validation->add('class_id', 'req','class');	
+				//$validation->add('student_address', 'req','address');	
+				//$validation->add('student_roll_number', 'alphanum','roll number');	
+				$validation->add('student_gender', 'req','gender');
+				$validation->add('student_country', 'req','country');
+				$validation->add('student_state', 'req','state');
+				$validation->add('student_city', 'req','city');
+				$validation->add('student_zip', 'num','zip');
+				$validation->add('student_zip', 'fixlength','zip','6');
+				$validation->add('student_father_first_name', 'req','father first name');	
+				$validation->add('student_father_first_name', 'alpha','father first name');	
+				$validation->add('student_father_last_name', 'req','father last name');	
+				$validation->add('student_father_last_name', 'alpha','father last name');
+				//$validation->add('student_father_phone', 'num','father Contact Number');
+				//$validation->add('student_father_phone', 'fixlength','father Contact Number','10');
+				//$validation->add('student_father_email_id', 'req','father email id');	
+				$validation->add('student_father_email_id', 'email','father email id');
+				
+				$validation->add('student_mother_first_name', 'req','mother first name');	
+				$validation->add('student_mother_first_name', 'alpha','mother first name');	
+				$validation->add('student_mother_last_name', 'req','mother last name');	
+				$validation->add('student_mother_last_name', 'alpha','mother last name');
+				//$validation->add('student_mother_phone', 'num','mother Contact Number');
+				//$validation->add('student_mother_phone', 'fixlength','mother Contact Number','10');
+				//$validation->add('student_mother_email_id', 'req','mother email id');	
+				$validation->add('student_mother_email_id', 'email','mother email id');
+									
+				# check validations.
+				$valid= new valid();
+				if($valid->validate($_POST, $validation->get())):
+						#check entered email id aleady exist or not
+						$checkEmailId=get_object_by_query('student','student_email_id="'.$_POST['student_email_id'].'" and school_id="'.$school_id.'"');
+						#if exist
+						if($checkEmailId):
+							$login_session->pass_msg[]=($checkEmailId->student_is_active==0)?'Entered email id already exist and deactivated .Please activate this':'Entered email id already exist';
+							$login_session->set_pass_msg();
+							$login_session->set_success();
+							Redirect(make_long_url('administration-student','insert','insert'));
+						else:
+						    $password=generateCode(9);
+						    $not=array('validate');
+						    $data=$_POST;
+						    $data['school_id']=$school_id;
+							$data['password']=$password;
+						    insert_record_in_table('student',$data,$not);
+							
+                            $Name=$_POST['student_first_name'].' '.$_POST['student_last_name'];
+				            $schoolCode=$schoolDetail->school_code;
+				            $UserId=$_POST['student_email_id'];
+							$Password=$password;
+				            include_once(DIR_FS_SITE_INCLUDE_EMAIL.'newRegistrationLogindetails.php');
+                            SendEmail(SITE_NAME.' Login Details ', $_POST['student_email_id'] , ADMIN_EMAIL, SITE_NAME, $contents,'','html');
+                            
+                   
+							//$login_session->pass_msg[]='New student has been added successfully';
+							//$login_session->set_pass_msg();
+							//$login_session->set_success();
+							Redirect(make_url('administration-student'));
+						endif;
+				else:
+					   
+						$login_session->pass_msg=$valid->error;
+						$login_session->set_pass_msg();
+						Redirect(make_long_url('administration-student', 'insert', 'insert')); 
+				endif;			
+			
+		endif;	
+		break;
+	case'update':
+		#update class	
+		if(isset($_POST['validate']) && $_POST['validate']=='Update'):
+		   # add validations
+				$validation=new user_validation();
+				$validation->add('student_email_id', 'req','email id');	
+				$validation->add('student_email_id', 'email','email id');	
+				$validation->add('student_first_name', 'req','first name');	
+				$validation->add('student_first_name', 'alpha','first name');	
+				$validation->add('student_last_name', 'req','last name');	
+				$validation->add('student_last_name', 'alpha','last name');
+				$validation->add('class_id', 'req','class');	
+				//$validation->add('student_address', 'req','address');	
+				//$validation->add('student_roll_number', 'alphanum','roll number');	
+				$validation->add('student_gender', 'req','gender');
+				$validation->add('student_country', 'req','country');
+				$validation->add('student_state', 'req','state');
+				$validation->add('student_city', 'req','city');
+				$validation->add('student_zip', 'num','zip');
+				$validation->add('student_zip', 'fixlength','zip','6');
+				$validation->add('student_father_first_name', 'req','father first name');	
+				$validation->add('student_father_first_name', 'alpha','father first name');	
+				$validation->add('student_father_last_name', 'req','father last name');	
+				$validation->add('student_father_last_name', 'alpha','father last name');
+				//$validation->add('student_father_phone', 'num','father Contact Number');
+				//$validation->add('student_father_phone', 'fixlength','father Contact Number','10');
+				//$validation->add('student_father_email_id', 'req','father email id');	
+				$validation->add('student_father_email_id', 'email','father email id');
+				
+				$validation->add('student_mother_first_name', 'req','mother first name');	
+				$validation->add('student_mother_first_name', 'alpha','mother first name');	
+				$validation->add('student_mother_last_name', 'req','mother last name');	
+				$validation->add('student_mother_last_name', 'alpha','mother last name');
+				//$validation->add('student_mother_phone', 'num','mother Contact Number');
+				//$validation->add('student_mother_phone', 'fixlength','mother Contact Number','10');
+				//$validation->add('student_mother_email_id', 'req','mother email id');	
+				$validation->add('student_mother_email_id', 'email','mother email id');
+									
+				# check validations.
+				$valid= new valid();
+				if($valid->validate($_POST, $validation->get())):
+						#check entered email id aleady exist or not
+						$checkEmailId=get_object_by_query('student','student_email_id="'.$_POST['student_email_id'].'" and school_id="'.$school_id.'" and student_id!="'.$student_id.'"');
+						#if exist
+						if($checkEmailId):
+							$login_session->pass_msg[]='You can\'t update student email id.Entered email id already exist';
+							$login_session->set_pass_msg();
+							$login_session->set_success();
+							Redirect(make_long_url('administration-student','update','update','student_id='.$student_id));
+						else:
+						
+						    $not=array('validate');
+							$data=$_POST;
+						    $where="student_id='".$student_id."' and school_id='".$school_id."'";																																																																																			
+					        update_record_in_table('student',$where,$data,$not);
+							//$login_session->pass_msg[]='student details has been updated successfully';
+							//$login_session->set_pass_msg();
+							//$login_session->set_success();
+							Redirect(make_url('administration-student'));
+			            endif;
+				else:
+					   
+						$login_session->pass_msg=$valid->error;
+						$login_session->set_pass_msg();
+						Redirect(make_long_url('administration-student','update','update','student_id='.$student_id)); 
+				endif;			
+		endif;
+		break;
+	case 'list_ops':
+		#update position.
+		if(is_var_set_in_post('statusUpdate')):
+		
+			foreach ($_POST['status'] as $k=>$v):
+				$q= new query('student');
+				$q->Data['student_is_active']=$v;
+				$q->Where="where student_id='".$k."' and school_id='".$school_id."'";
+			    $q->UpdateCustom();
+			endforeach;;
+			$login_session->pass_msg[]='student(s) status has been updated successfully.';
+	        $login_session->set_pass_msg();
+	        $login_session->set_success();
+			Redirect(make_url('administration-student'));
+		endif;
+		break;
+	
+	case'delete':
+		
+		#deactivate student
+		$data['student_account_delete']=1;
+		update_record_in_table('student',"student_id='".$student_id."' and school_id='".$school_id."'",$data);
+		$login_session->pass_msg[]='This student has been deleted successfully.';
+	    $login_session->set_pass_msg();
+	    $login_session->set_success();
+	    Redirect(make_url('administration-student'));
+		break;
+		
+		
+	case'deactivate':
+		
+		#deactivate student
+		$data['student_is_active']=0;
+		update_record_in_table('student',"student_id='".$student_id."' and school_id='".$school_id."'",$data);
+		//$login_session->pass_msg[]='This student has been deactivated successfully.';
+	   // $login_session->set_pass_msg();
+	   // $login_session->set_success();
+	    Redirect(make_url('administration-student'));
+		break;
+		
+		
+	case'activate':
+		
+		#activate student
+		$data['student_is_active']=1;
+		update_record_in_table('student',"student_id='".$student_id."' and school_id='".$school_id."'",$data);
+		//$login_session->pass_msg[]='This student has been activated successfully.';
+	   // $login_session->set_pass_msg();
+	   // $login_session->set_success();
+	    Redirect(make_url('administration-student'));
+		break;	
+   case'download':
+		
+		#download student list
+		download_student();
+		$filename="studentList".$login_session->get_schoolId().'.csv';
+		unlink('download/'.$filename);
+	    Redirect(make_url('administration-student'));
+		break;
+	case'import':
+	    if(isset($_POST['submit']) && $_POST['submit']=='Upload'):
+		 $fname = $_FILES['download']['name'];
+         $chk_ext = explode(".",$fname);
+		 $error_status=0;
+		 
+		   if(strtolower($chk_ext[1]) == "csv")
+		     {
+		       $filename = $_FILES['download']['tmp_name'];
+		       $handle = fopen($filename, "r");
+			   $session_id=generateCode(9);
+		       $sr=0;
+		       while (($data = fgetcsv($handle, 1000, ",")) !== FALSE)
+		       {
+		         $sr++;
+		         if($sr=='1'):
+		           //$fields=$data;
+				   $fields=array('student_email_id','student_first_name','student_last_name','student_gender','student_dob','student_country','student_state','student_city','class_id','student_father_first_name','student_father_last_name','student_mother_first_name','student_mother_last_name','student_admission_no','student_roll_number','student_with_school_since','student_father_phone','student_father_email_id','student_mother_phone','student_mother_email_id','student_address');
+		         else:
+				    $combineArray=array_combine($fields,$data);
+					
+				    if(checkValidationImportStudentList(array_combine($fields,$data))=='1' && checkEmailIdExistImportStudentList($combineArray['student_email_id'])==1 &&  checkClassExistImportStudentList($combineArray['class_id'])==1 && checkAdmissionNoExistImportStudentList($combineArray['student_admission_no'])==1):
+					
+						$data1=array();
+						foreach($fields as $k=>$v):
+						 if($data[$k]):
+						  $data1[$v]=$data[$k];
+						 endif;  
+						endforeach;
+						$data1['school_id']=$school_id;
+						$data1['password']=generateCode(9);
+					   insert_record_in_table('student',$data1);
+					 else:
+					    $error_status=1;
+					    $data1=array();
+						foreach($fields as $k=>$v):
+						 if(trim($data[$k])):
+						  $data1[$v]=$data[$k];
+						 endif;  
+						endforeach;
+						$data1['school_id']=$school_id;
+						$data1['session_id']=$session_id;
+					   insert_record_in_table('student_error_records',$data1);
+					   
+					 endif;  
+					 //print_r($errorArray);exit;
+		         endif;
+	           }
+		    fclose($handle);
+	        }
+		  if($error_status==1):
+		    Redirect(make_url('administration-student','error_status='.$error_status));
+		  else:
+		    Redirect(make_url('administration-student'));
+		  endif;
+		endif;
+		break;				
+ 
+	default:break;
+endswitch;
+?>

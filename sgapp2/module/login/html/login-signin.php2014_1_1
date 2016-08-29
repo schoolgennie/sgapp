@@ -1,0 +1,234 @@
+<!DOCTYPE html >
+<html >
+<head>
+<? include_once(DIR_FS_SITE_INCLUDE.'meta.php'); ?>
+<title>School Gennie</title>
+<? include_once(DIR_FS_SITE_INCLUDE.'css.php'); ?>
+<? include_once(DIR_FS_SITE_INCLUDE.'javascript.php'); ?>
+
+		<!-- start: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+		<script src="design/plugins/jquery-validation/dist/jquery.validate.min.js"></script>
+		<!--<script src="design/js/login.js"></script>-->
+		<!-- end: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+<script>
+			jQuery(document).ready(function() {
+				Login.init();
+			});
+		</script>
+<script>
+function databaseConnectIndividualParent()
+{
+  <?=$login_session->unset_database_session();?>
+  var useremail=$('form#frmStudent #useremail').val();
+  var password=$('form#frmStudent #password').val();
+
+	$.ajax({
+	
+		type: "POST",
+		url: "<?=DIR_WS_SITE?>?page=login-ajax",
+		data:"mode=databaseConnectIndividual&useremail="+useremail+"&password="+password,
+		
+		success: function(output)
+		 {alert(output);
+		  if(output==1)
+		  {
+		  
+		   $('#frmStudent').submit();
+		  }	
+		}   
+	});
+}
+function databaseConnectIndividualFaculty()
+{
+  <?=$login_session->unset_database_session();?>
+  var useremail=$('form#frmFaculty #useremail').val();
+  var password=$('form#frmFaculty #password').val();
+ 
+	$.ajax({
+	
+		type: "POST",
+		url: "<?=DIR_WS_SITE?>?page=login-ajax",
+		data:"mode=databaseConnectIndividual&useremail="+useremail+"&password="+password,
+		
+		success: function(output)
+		 {
+		 
+		  if(output==1)
+		  {
+		  $('#frmFaculty').submit();
+		  }	
+		}   
+	});
+}
+</script>	
+
+</head>
+
+<body class="login">
+<!-- start: MAIN CONTAINER -->
+<div class="main-login col-sm-4 col-sm-offset-4">
+			<!-- start: LOGIN BOX -->
+			<div class="box-login">
+				<h3>Sign in to your account</h3>
+				<?php display_form_error();?>
+				<div class="errorHandler alert alert-danger no-display">
+									<i class="fa fa-remove-sign"></i> 
+								</div>
+				<p>
+					Please enter your name and password to log in.
+				</p>
+				
+				<div class="tabbable">
+					<ul id="myTab" class="nav nav-tabs tab-bricky">
+						<li class="active">
+							<a href="#parents" data-toggle="tab">
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Parents <i class="clip-users-2"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</a>
+						</li>
+						<li>
+							<a href="#faculty" data-toggle="tab">
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Faculty <i class="clip-user-5 "></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</a>
+						</li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane in active" id="parents">
+							 <form class="form-login" action="<?=make_url($page)?>" method="post" name="frmStudent" id="frmStudent" >
+							
+								<div class="errorHandler alert alert-danger no-display">
+									<i class="fa fa-remove-sign"></i> <?php display_form_error();?>
+								</div>
+								<fieldset>
+									<div class="form-group">
+										<span class="input-icon">
+											
+											<input id="schoolcode" name="schoolcode" type="text" class="form-control"  placeholder="School Code" />
+											
+											<i class="fa fa-user"></i> </span>
+									</div>
+									<div class="form-group">
+										<span class="input-icon">
+											<input id="useremail" name="useremail" type="text" class="form-control"  placeholder="Parent-ID" />
+											
+											<i class="fa fa-user"></i> </span>
+									</div>
+									<div class="form-group form-actions">
+										<span class="input-icon">
+											 <input id="password" name="password" type="password" class="form-control password"  placeholder="Password" />
+											
+											<i class="fa fa-lock"></i>
+											<a class="forgot" href="#" rel='day_view'>Forgot Password?</a>
+											 </span>
+									</div>
+									<input type="hidden" name="userType" value="student" />
+									<div class="form-actions">
+										<label for="remember" class="checkbox-inline">
+											<input type="checkbox" name="remember_me" id="remember_me" class="grey remember" value="1"/>
+											
+											Keep me signed in
+										</label>
+										
+										<input type="button" name="login" class="btn btn-bricky pull-right" value="Login" onClick="databaseConnectIndividualParent();"/>
+											
+									</div>
+									
+								</fieldset>
+							</form>
+						</div>
+						<div class="tab-pane" id="faculty">
+							 <form class="form-login" action="<?=make_url($page)?>" method="post" name="frmFaculty" id="frmFaculty" >
+							
+								<div class="errorHandler alert alert-danger no-display">
+									<i class="fa fa-remove-sign"></i> 
+								</div>
+								<fieldset>
+									<div class="form-group">
+										<span class="input-icon">
+											
+											<input id="schoolcode" name="schoolcode" type="text" class="form-control"  placeholder="School Code" />
+											
+											<i class="fa fa-user"></i> </span>
+									</div>
+									<div class="form-group">
+										<span class="input-icon">
+											<input id="useremail" name="useremail" type="text" class="form-control"  placeholder="Faculty-ID" />
+											
+											<i class="fa fa-user"></i> </span>
+									</div>
+									<div class="form-group form-actions">
+										<span class="input-icon">
+											 <input id="password" name="password" type="password" class="form-control password"  placeholder="Password" />
+											
+											<i class="fa fa-lock"></i>
+											<a class="forgot" href="#" >Forgot Password?</a>
+											 </span>
+									</div>
+									<input type="hidden" name="userType" value="faculty" />
+									<div class="form-actions">
+										<label for="remember" class="checkbox-inline">
+											<input type="checkbox" name="remember_me" id="remember_me" class="grey remember" value="1"/>
+											
+											Keep me signed in
+										</label>
+									
+										<input type="button" name="login" class="btn btn-bricky pull-right" value="Login" onClick="databaseConnectIndividualFaculty();"/>
+											
+									</div>
+									
+								</fieldset>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="new-account">
+							<a href="<?=make_url('login-admin')?>" >
+								School Admin
+							</a>
+				</div>			
+			</div>
+			<!-- end: LOGIN BOX -->
+			
+			<!-- start: Admin LOGIN BOX -->
+			
+			<!-- end: LOGIN BOX -->
+			
+			<!-- start: FORGOT BOX -->
+			<div class="box-forgot">
+				<h3>Forget Password?</h3>
+				<p>
+					Enter your e-mail address below to reset your password.
+				</p>
+				<form class="form-forgot">
+					<div class="errorHandler alert alert-danger no-display">
+						<i class="fa fa-remove-sign"></i> <?php display_form_error();?>
+					</div>
+					<fieldset>
+						<div class="form-group">
+							<span class="input-icon">
+								<input type="email" class="form-control" name="email" placeholder="Email">
+								<i class="fa fa-envelope"></i> </span>
+						</div>
+						<div class="form-actions">
+							<button class="btn btn-light-grey go-back">
+								<i class="fa fa-circle-arrow-left"></i> Back
+							</button>
+							<button type="submit" class="btn btn-bricky pull-right">
+								Submit <i class="fa fa-arrow-circle-right"></i>
+							</button>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+			<!-- end: FORGOT BOX -->	
+				
+<div class="copyright">
+<a href="">Terms of Use</a>   |  <a href="">Privacy Policy</a>     |  Copyright © 2013 - SchoolGennie
+</div>
+
+</div>
+  <!-- Main End -->	
+
+ 
+</body>
+
+</html>

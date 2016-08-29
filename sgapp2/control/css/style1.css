@@ -1,0 +1,8 @@
+body{margin:0px; padding:0px; background:url(../image/bg.jpg) #323232 no-repeat top center;}
+form{display:inline;}
+td{color:#ffffff; font-size:13px; line-height:15px; font-family:Verdana, Arial, Helvetica, sans-serif;}
+a{color:#ffffff; text-decoration:none;text-decoration:underline;} 
+a:hover{color:#ffffff; text-decoration:none;}
+.bg{background:url(../image/login_bg.png) no-repeat top center; margin:201px 0px 0px 0px; padding:60px 0px 0px 0px;}
+input{width:190px; height:16px; border:1px solid #fff;}
+.bottomlink{display:block;}

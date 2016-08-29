@@ -1,0 +1,4 @@
+[2016-01-02 14:35:39] Logs.WARNING: Foo1 [] []
+[2016-01-02 14:35:39] Logs.ERROR: Unknown database 'demo' [] []
+[2016-01-02 14:44:16] Logs.WARNING: Foo1 [] []
+[2016-01-02 14:44:16] Logs.ERROR: Unknown database 'demo' [] []

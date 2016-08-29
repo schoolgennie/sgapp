@@ -1,0 +1,147 @@
+<?
+isset($_GET['action'])?$action=$_GET['action']:$action='list';
+isset($_GET['section'])?$section=$_GET['section']:$section='list';
+isset($_GET['id'])?$id=$_GET['id']:$id='0';
+isset($_GET['page'])?$page=$_GET['page']:$page='1';
+$code=generateCode(9);
+if($id):
+$fetchData =get_object_by_col('school','school_id',$id);
+endif;
+#handle actions here.
+switch ($action):
+	case'list':
+		$QueryObj=get_all_object_by_query('school','',true,$page,20);
+		break;
+	case'detail':
+		
+		break;
+	case'insert':
+	    if(isset($_POST['insert']) && $_POST['insert']=='Insert'):
+		 # add validations
+		$validation=new user_validation();
+		$validation->add('school_code', 'req','school code');
+		$validation->add('school_name', 'req','school name');	
+		$validation->add('school_email_id', 'req','user id');	
+		$validation->add('school_email_id', 'email','user id');	
+		$validation->add('school_admin_name', 'req','admin name');
+		$validation->add('school_admin_name', 'alpha','admin name');
+		$validation->add('school_affiliation_no', 'req','affiliation no');
+		$validation->add('school_affiliation_no', 'alphanum','affiliation no');
+		$validation->add('school_phone1', 'num','Contact No. 1');
+		$validation->add('school_phone2', 'num','Contact No. 1');
+		$validation->add('school_email_official', 'email','Email id');
+		$validation->add('school_fax', 'num','Fax');
+		$validation->add('school_average_fee', 'num','average fee');
+		$validation->add('school_country', 'req','Country');
+		$validation->add('school_country', 'alpha','Country');
+		$validation->add('school_state', 'req','State');
+		$validation->add('school_state', 'alpha','State');
+		$validation->add('school_city', 'req','city');
+		$validation->add('school_city', 'alpha','city');
+			
+		
+		
+		# check validations.
+		$valid= new valid();
+		if($valid->validate($_POST, $validation->get())):
+	     # check username already exists?
+		 $check_user=get_object_by_query('school','school_code="'.$_POST['school_code'].'"');
+		 if(!$check_user):
+		  		$Data=MakeDataArray($_POST, array('insert'));
+				$Data['school_is_active']=1;
+				$Data['password']=$code;
+				$QueryObj=new query('school');
+				$QueryObj->Data=$Data;
+				if($QueryObj->Insert()):
+				   $Name=$_POST['school_name'];
+				   $schoolCode=$_POST['school_code'];
+				   $UserId=$_POST['school_email_id'];
+				   $Password=$code;
+				   include_once(DIR_FS_SITE_INCLUDE_EMAIL.'newRegistrationLogindetails.php');
+                   SendEmail('School Login Details ', $_POST['school_email_id'] , ADMIN_EMAIL, SITE_NAME, $contents,'','html');
+                   $admin_user->set_pass_msg('This school has been registered successfully.');
+			       Redirect(make_admin_url('user', 'list', 'list','page='.$page));                                        
+				else:
+				   $admin_user->set_pass_msg(MSG_REGISTR_FAILED);
+			       Redirect(make_admin_url('user', 'insert', 'insert'));                                        
+				endif;
+		  else: 
+				$admin_user->set_pass_msg('This school code already exist');
+			    Redirect(make_admin_url('user', 'insert', 'insert')); 
+				
+		  endif;
+		  else:
+		    foreach($valid->error as $k=>$v):
+		  $error.=$v.'<br/>';
+		  endforeach;
+		  $admin_user->set_pass_msg($error);
+		  Redirect(make_admin_url('user', 'insert', 'insert')); 
+	      endif;	
+		  endif;
+		break;	
+	case'update':
+		 if(isset($_POST['update']) && $_POST['update']=='Update'):
+		 # add validations
+		$validation=new user_validation();
+		$validation->add('school_code', 'req','school code');
+		$validation->add('school_name', 'req','school name');	
+		$validation->add('school_email_id', 'req','user id');	
+		$validation->add('school_email_id', 'email','user id');	
+		$validation->add('school_admin_name', 'req','admin name');
+		$validation->add('school_admin_name', 'alpha','admin name');
+		$validation->add('school_affiliation_no', 'req','affiliation no');
+		$validation->add('school_affiliation_no', 'alphanum','affiliation no');
+		$validation->add('school_phone1', 'num','Contact No. 1');
+		$validation->add('school_phone2', 'num','Contact No. 1');
+		$validation->add('school_email_official', 'email','Email id');
+		$validation->add('school_fax', 'num','Fax');
+		$validation->add('school_average_fee', 'num','average fee');
+		$validation->add('school_country', 'req','Country');
+		$validation->add('school_country', 'alpha','Country');
+		$validation->add('school_state', 'req','State');
+		$validation->add('school_state', 'alpha','State');
+		$validation->add('school_city', 'req','city');
+		$validation->add('school_city', 'alpha','city');
+			
+		
+		
+		# check validations.
+		$valid= new valid();
+		if($valid->validate($_POST, $validation->get())):
+	     # check username already exists?
+		 $check_user=get_object_by_query('school','school_code="'.$_POST['school_code'].'" and school_id!="'.$_POST['school_id'].'"');
+		 if(!$check_user):
+		  		
+						$data=MakeDataArray($_POST, array('update','school_id'));
+						$where="school_id='".$_POST['school_id']."'";																																																																																			
+						update_record_in_table('school',$where,$data);
+				  
+                   $admin_user->set_pass_msg('This school ifo has been updated successfully.');
+			       Redirect(make_admin_url('user', 'list', 'list','page='.$page));                                        
+				                                      
+				
+		  else: 
+				$admin_user->set_pass_msg('This school code already exist');
+			    Redirect(make_admin_url('user', 'update', 'update','id='.$id)); 
+				
+		  endif;
+		  else:
+		  foreach($valid->error as $k=>$v):
+		  $error.=$v.'<br/>';
+		  endforeach;
+		  $admin_user->set_pass_msg($error);
+		  Redirect(make_admin_url('user', 'update', 'update','id='.$id)); 
+	      endif;	
+		  endif;
+		 break; 
+	//case'delete':
+		//$QueryObj->InitilizeSQL();
+		//$QueryObj->TableName='school';
+		//$QueryObj->Where="where school_id=$id";
+		//$QueryObj->Delete_where();
+		//Redirect(make_admin_url('user', 'list', 'list'));
+		//exit;	
+		//break;
+	default:break;
+endswitch;
+?>

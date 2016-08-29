@@ -1,0 +1,23 @@
+IP: 127.0.0.1 TIME: Apr 5 8:59:46 2014 REFERRER: http://localhost/sgapp/sgapp2/control/control.php?Page=user&action=list&section=list& SEARCHSTRING: Page=user&action=update&section=update&id=30 USERAGENT: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.154 Safari/537.36LOGINTYPE:schoolLOGINID:30SCHOOL:ERROR:Unknown database 'demo1'
+IP: 127.0.0.1 TIME: Apr 5 9:09:32 2014 REFERRER: http://localhost/sgapp/sgapp2/control/index.php SEARCHSTRING:  USERAGENT: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.154 Safari/537.36LOGINTYPE:schoolLOGINID:30SCHOOL:ERROR:Unknown database 'demo1'
+IP: 127.0.0.1 TIME: Apr 5 9:09:48 2014 REFERRER: http://localhost/sgapp/sgapp2/control/index.php SEARCHSTRING:  USERAGENT: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.154 Safari/537.36LOGINTYPE:schoolLOGINID:30SCHOOL:ERROR:Unknown database 'demo1'
+IP: 127.0.0.1 TIME: Apr 5 9:10:51 2014 REFERRER: http://localhost/sgapp/sgapp2/control/index.php SEARCHSTRING:  USERAGENT: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.154 Safari/537.36LOGINTYPE:schoolLOGINID:30SCHOOL:ERROR:
+IP: 127.0.0.1 TIME: Apr 5 12:00:38 2014 REFERRER: http://localhost/sgapp/sgapp2/control/index.php SEARCHSTRING:  USERAGENT: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.154 Safari/537.36LOGINTYPE:schoolLOGINID:30SCHOOL:ERROR:
+[2014-04-05 20:37:05] Logs.WARNING: Foo1 [] []
+[2014-04-05 20:37:05] Logs.ERROR: Bar1 [] []
+[2014-04-05 20:39:11] Logs.WARNING: Foo [] []
+[2014-04-05 20:39:11] Logs.ERROR: Bar [] []
+[2014-04-05 20:39:11] Logs.WARNING: Foo [] []
+[2014-04-05 20:39:11] Logs.ERROR: Bar [] []
+[2014-04-05 20:39:14] Logs.WARNING: Foo [] []
+[2014-04-05 20:39:14] Logs.ERROR: Bar [] []
+[2014-04-05 20:39:16] Logs.WARNING: Foo [] []
+[2014-04-05 20:39:16] Logs.ERROR: Bar [] []
+[2014-04-05 20:39:16] Logs.WARNING: Foo [] []
+[2014-04-05 20:39:16] Logs.ERROR: Bar [] []
+[2014-04-05 20:39:16] Logs.WARNING: Foo1 [] []
+[2014-04-05 20:39:16] Logs.ERROR: Bar1 [] []
+[2014-04-05 20:39:16] Logs.WARNING: Foo [] []
+[2014-04-05 20:39:16] Logs.ERROR: Bar [] []
+[2014-04-05 20:39:17] Logs.WARNING: Foo [] []
+[2014-04-05 20:39:17] Logs.ERROR: Bar [] []

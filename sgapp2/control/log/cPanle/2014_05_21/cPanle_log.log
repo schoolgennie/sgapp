@@ -1,0 +1,2 @@
+[2014-05-21 18:11:26] Logs.WARNING: Foo1 [] []
+[2014-05-21 18:11:26] Logs.ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':8888' at line 1 [] []

@@ -1,0 +1,120 @@
+IP: 117.208.94.61 TIME: Jan 5 0:15:54 2014 REFERRER: http://test.schoolgennie.com/?page=exams-createacademictest&action=scholastic&section=scholastic&student_id=1 SEARCHSTRING: page=login-signin& USERAGENT: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36LOGINID:
+IP: 117.208.94.61 TIME: Jan 5 0:16:53 2014 REFERRER:  SEARCHSTRING: page=sgapp2/.errordocs/404 USERAGENT: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36LOGINID:
+IP: 117.208.94.61 TIME: Jan 5 0:18:07 2014 REFERRER: http://test.schoolgennie.com/?page=login-signin& SEARCHSTRING: page=login-admin& USERAGENT: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36LOGINID:
+IP: 117.208.94.61 TIME: Jan 5 0:20:48 2014 REFERRER: http://test.schoolgennie.com/?page=login-admin& SEARCHSTRING: page=login-ajax USERAGENT: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36LOGINID:
+IP: 117.208.94.61 TIME: Jan 5 0:20:48 2014 REFERRER: http://test.schoolgennie.com/?page=login-admin& SEARCHSTRING: page=login-admin& USERAGENT: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36LOGINID:
+IP: 117.208.94.61 TIME: Jan 5 3:00:30 2014 REFERRER:  SEARCHSTRING:  USERAGENT: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:26.0) Gecko/20100101 Firefox/26.0LOGINID:
+IP: 117.208.94.61 TIME: Jan 5 3:00:34 2014 REFERRER: http://test.schoolgennie.com/ SEARCHSTRING: page=login-admin& USERAGENT: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:26.0) Gecko/20100101 Firefox/26.0LOGINID:
+IP: 117.208.94.61 TIME: Jan 5 3:00:37 2014 REFERRER: http://test.schoolgennie.com/?page=login-admin& SEARCHSTRING: page=login-ajax USERAGENT: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:26.0) Gecko/20100101 Firefox/26.0LOGINID:
+IP: 117.208.94.61 TIME: Jan 5 3:00:38 2014 REFERRER: http://test.schoolgennie.com/?page=login-admin& SEARCHSTRING: page=login-admin& USERAGENT: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:26.0) Gecko/20100101 Firefox/26.0LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 3:43:33 2014 REFERRER:  SEARCHSTRING: page=sgapp2/.errordocs/403 USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 3:43:33 2014 REFERRER:  SEARCHSTRING: page=sgapp2/.errordocs/403 USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 3:47:00 2014 REFERRER:  SEARCHSTRING: page=sgapp2/.errordocs/403 USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 3:47:01 2014 REFERRER:  SEARCHSTRING: page=sgapp2/.errordocs/403 USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 3:49:49 2014 REFERRER:  SEARCHSTRING: page=sgapp2/.errordocs/403 USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 3:49:49 2014 REFERRER:  SEARCHSTRING: page=sgapp2/.errordocs/403 USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 4:00:40 2014 REFERRER:  SEARCHSTRING: page=sgapp2/.errordocs/403 USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 4:00:40 2014 REFERRER:  SEARCHSTRING: page=sgapp2/.errordocs/403 USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 4:02:00 2014 REFERRER:  SEARCHSTRING: page=sgapp2/.errordocs/403 USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 4:02:00 2014 REFERRER:  SEARCHSTRING: page=sgapp2/.errordocs/403 USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 4:03:30 2014 REFERRER:  SEARCHSTRING: page=sgapp2/.errordocs/403 USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 4:03:30 2014 REFERRER:  SEARCHSTRING: page=sgapp2/.errordocs/403 USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 4:07:26 2014 REFERRER:  SEARCHSTRING: page=sgapp2/.errordocs/403 USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 4:07:26 2014 REFERRER:  SEARCHSTRING: page=sgapp2/.errordocs/403 USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 4:13:01 2014 REFERRER:  SEARCHSTRING: page=sgapp2/.errordocs/403 USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 4:13:01 2014 REFERRER:  SEARCHSTRING: page=sgapp2/.errordocs/403 USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 4:16:32 2014 REFERRER:  SEARCHSTRING: page=sgapp2/.errordocs/403 USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 4:16:32 2014 REFERRER:  SEARCHSTRING: page=sgapp2/.errordocs/403 USERAGENT: LOGINID:
+IP: 115.118.15.140 TIME: Jan 5 7:28:36 2014 REFERRER: http://test.schoolgennie.com/?page=administration-class& SEARCHSTRING: page=login-signin& USERAGENT: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36LOGINID:
+IP: 115.118.15.140 TIME: Jan 5 7:28:42 2014 REFERRER: http://test.schoolgennie.com/?page=login-signin& SEARCHSTRING: page=login-admin& USERAGENT: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36LOGINID:
+IP: 115.118.15.140 TIME: Jan 5 7:28:43 2014 REFERRER: http://test.schoolgennie.com/?page=login-admin& SEARCHSTRING: page=login-ajax USERAGENT: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36LOGINID:
+IP: 115.118.15.140 TIME: Jan 5 7:28:44 2014 REFERRER: http://test.schoolgennie.com/?page=login-admin& SEARCHSTRING: page=login-admin& USERAGENT: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 7:29:08 2014 REFERRER:  SEARCHSTRING: page=sgapp2/.errordocs/403 USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 7:29:08 2014 REFERRER:  SEARCHSTRING: page=sgapp2/.errordocs/403 USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 7:53:58 2014 REFERRER:  SEARCHSTRING: page=sgapp2/.errordocs/403 USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 7:53:58 2014 REFERRER:  SEARCHSTRING: page=sgapp2/.errordocs/403 USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 7:54:40 2014 REFERRER:  SEARCHSTRING: page=sgapp2/.errordocs/403 USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 7:54:40 2014 REFERRER:  SEARCHSTRING: page=sgapp2/.errordocs/403 USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 7:54:49 2014 REFERRER:  SEARCHSTRING: page=sgapp2/.errordocs/403 USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 7:54:49 2014 REFERRER:  SEARCHSTRING: page=sgapp2/.errordocs/403 USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 8:00:08 2014 REFERRER:  SEARCHSTRING: page=sgapp2/.errordocs/403 USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 8:00:08 2014 REFERRER:  SEARCHSTRING: page=sgapp2/.errordocs/403 USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 8:00:33 2014 REFERRER:  SEARCHSTRING: page=sgapp2/.errordocs/403 USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 8:00:33 2014 REFERRER:  SEARCHSTRING: page=sgapp2/.errordocs/403 USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 8:01:59 2014 REFERRER:  SEARCHSTRING: page=sgapp2/.errordocs/403 USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 8:01:59 2014 REFERRER:  SEARCHSTRING: page=sgapp2/.errordocs/403 USERAGENT: LOGINID:
+IP: 117.197.148.39 TIME: Jan 5 11:16:31 2014 REFERRER: http://test.schoolgennie.com/?page=administration-subject& SEARCHSTRING: page=logout-logout& USERAGENT: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:26.0) Gecko/20100101 Firefox/26.0LOGINID:
+IP: 117.197.148.39 TIME: Jan 5 11:16:31 2014 REFERRER: http://test.schoolgennie.com/?page=administration-subject& SEARCHSTRING: page=login-signin& USERAGENT: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:26.0) Gecko/20100101 Firefox/26.0LOGINID:
+IP: 117.197.148.39 TIME: Jan 5 11:18:03 2014 REFERRER: http://test.schoolgennie.com/?page=login-signin& SEARCHSTRING: page=login-ajax USERAGENT: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:26.0) Gecko/20100101 Firefox/26.0LOGINID:
+IP: 117.197.148.39 TIME: Jan 5 11:18:04 2014 REFERRER: http://test.schoolgennie.com/?page=login-signin& SEARCHSTRING: page=login-signin& USERAGENT: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:26.0) Gecko/20100101 Firefox/26.0LOGINID:
+IP: 115.118.29.35 TIME: Jan 5 21:05:47 2014 REFERRER: http://test.schoolgennie.com/?page=administration-class& SEARCHSTRING: page=login-signin& USERAGENT: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36LOGINID:
+IP: 115.118.29.35 TIME: Jan 5 21:05:53 2014 REFERRER: http://test.schoolgennie.com/?page=login-signin& SEARCHSTRING: page=login-admin& USERAGENT: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36LOGINID:
+IP: 115.118.29.35 TIME: Jan 5 21:05:59 2014 REFERRER: http://test.schoolgennie.com/?page=login-admin& SEARCHSTRING: page=login-ajax USERAGENT: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36LOGINID:
+IP: 115.118.29.35 TIME: Jan 5 21:05:59 2014 REFERRER: http://test.schoolgennie.com/?page=login-admin& SEARCHSTRING: page=login-admin& USERAGENT: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36LOGINID:
+IP: 117.197.148.39 TIME: Jan 5 22:13:49 2014 REFERRER: http://test.schoolgennie.com/?page=message-message& SEARCHSTRING: page=login-signin& USERAGENT: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36LOGINID:
+IP: 117.197.148.39 TIME: Jan 5 22:13:53 2014 REFERRER: http://test.schoolgennie.com/?page=login-signin& SEARCHSTRING: page=login-admin& USERAGENT: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36LOGINID:
+IP: 117.197.148.39 TIME: Jan 5 22:13:54 2014 REFERRER: http://test.schoolgennie.com/?page=login-admin& SEARCHSTRING: page=login-ajax USERAGENT: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36LOGINID:
+IP: 117.197.148.39 TIME: Jan 5 22:13:55 2014 REFERRER: http://test.schoolgennie.com/?page=login-admin& SEARCHSTRING: page=login-admin& USERAGENT: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 22:14:23 2014 REFERRER:  SEARCHSTRING: page=common-imagesize&width=251&height=188&path=http://test.schoolgennie.com/upload/photo/school_album/large/mg2hsp_Lighthouse.jpg USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 22:14:23 2014 REFERRER:  SEARCHSTRING: page=common-imagesize&width=251&height=188&path=http://test.schoolgennie.com/upload/photo/school_album/large/25d8t4_Desert.jpg USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 22:14:23 2014 REFERRER:  SEARCHSTRING: page=common-imagesize&width=251&height=188&path=http://test.schoolgennie.com/upload/photo/school_album/large/hdrwng_aap.jpg USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 22:16:22 2014 REFERRER:  SEARCHSTRING: page=common-imagesize&width=251&height=188&path=http://test.schoolgennie.com/upload/photo/school_album/large/mg2hsp_Lighthouse.jpg USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 22:16:22 2014 REFERRER:  SEARCHSTRING: page=common-imagesize&width=251&height=188&path=http://test.schoolgennie.com/upload/photo/school_album/large/r33hpj_Lighthouse.jpg USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 22:17:17 2014 REFERRER:  SEARCHSTRING: page=common-imagesize&width=251&height=188&path=http://test.schoolgennie.com/upload/photo/school_album/large/mg2hsp_Lighthouse.jpg USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 22:17:17 2014 REFERRER:  SEARCHSTRING: page=common-imagesize&width=251&height=188&path=http://test.schoolgennie.com/upload/photo/school_album/large/r33hpj_Lighthouse.jpg USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 22:17:34 2014 REFERRER:  SEARCHSTRING: page=common-imagesize&width=251&height=188&path=http://test.schoolgennie.com/upload/photo/school_album/large/mg2hsp_Lighthouse.jpg USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 22:17:35 2014 REFERRER:  SEARCHSTRING: page=common-imagesize&width=251&height=188&path=http://test.schoolgennie.com/upload/photo/school_album/large/25d8t4_Desert.jpg USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 22:17:35 2014 REFERRER:  SEARCHSTRING: page=common-imagesize&width=251&height=188&path=http://test.schoolgennie.com/upload/photo/school_album/large/hdrwng_aap.jpg USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 22:18:08 2014 REFERRER:  SEARCHSTRING: page=common-imagesize&width=251&height=188&path=http://test.schoolgennie.com/upload/photo/school_album/large/mg2hsp_Lighthouse.jpg USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 22:18:09 2014 REFERRER:  SEARCHSTRING: page=common-imagesize&width=251&height=188&path=http://test.schoolgennie.com/upload/photo/school_album/large/25d8t4_Desert.jpg USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 22:18:09 2014 REFERRER:  SEARCHSTRING: page=common-imagesize&width=251&height=188&path=http://test.schoolgennie.com/upload/photo/school_album/large/hdrwng_aap.jpg USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 22:18:22 2014 REFERRER:  SEARCHSTRING: page=common-imagesize&width=251&height=188&path=http://test.schoolgennie.com/upload/photo/school_album/large/mg2hsp_Lighthouse.jpg USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 22:18:22 2014 REFERRER:  SEARCHSTRING: page=common-imagesize&width=251&height=188&path=http://test.schoolgennie.com/upload/photo/school_album/large/r33hpj_Lighthouse.jpg USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 22:18:49 2014 REFERRER:  SEARCHSTRING: page=common-imagesize&width=251&height=188&path=http://test.schoolgennie.com/upload/photo/school_album/large/mg2hsp_Lighthouse.jpg USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 22:18:49 2014 REFERRER:  SEARCHSTRING: page=common-imagesize&width=251&height=188&path=http://test.schoolgennie.com/upload/photo/school_album/large/r33hpj_Lighthouse.jpg USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 22:19:53 2014 REFERRER:  SEARCHSTRING: page=common-imagesize&width=251&height=188&path=http://test.schoolgennie.com/upload/photo/school_album/large/mg2hsp_Lighthouse.jpg USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 22:19:53 2014 REFERRER:  SEARCHSTRING: page=common-imagesize&width=251&height=188&path=http://test.schoolgennie.com/upload/photo/school_album/large/r33hpj_Lighthouse.jpg USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 22:20:00 2014 REFERRER:  SEARCHSTRING: page=common-imagesize&width=251&height=188&path=http://test.schoolgennie.com/upload/photo/school_album/large/mg2hsp_Lighthouse.jpg USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 22:20:00 2014 REFERRER:  SEARCHSTRING: page=common-imagesize&width=251&height=188&path=http://test.schoolgennie.com/upload/photo/school_album/large/r33hpj_Lighthouse.jpg USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 22:20:27 2014 REFERRER:  SEARCHSTRING: page=common-imagesize&width=251&height=188&path=http://test.schoolgennie.com/upload/photo/school_album/large/mg2hsp_Lighthouse.jpg USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 22:20:27 2014 REFERRER:  SEARCHSTRING: page=common-imagesize&width=251&height=188&path=http://test.schoolgennie.com/upload/photo/school_album/large/r33hpj_Lighthouse.jpg USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 22:20:41 2014 REFERRER:  SEARCHSTRING: page=common-imagesize&width=251&height=188&path=http://test.schoolgennie.com/upload/photo/school_album/large/mg2hsp_Lighthouse.jpg USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 22:20:41 2014 REFERRER:  SEARCHSTRING: page=common-imagesize&width=251&height=188&path=http://test.schoolgennie.com/upload/photo/school_album/large/r33hpj_Lighthouse.jpg USERAGENT: LOGINID:
+IP: 182.64.47.5 TIME: Jan 5 22:37:46 2014 REFERRER: http://demo.schoolgennie.com/?page=administration-student& SEARCHSTRING: page=administration-class& USERAGENT: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36LOGINID:
+IP: 182.64.47.5 TIME: Jan 5 22:37:46 2014 REFERRER: http://demo.schoolgennie.com/?page=administration-student& SEARCHSTRING: page=login-signin& USERAGENT: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36LOGINID:
+IP: 117.197.148.39 TIME: Jan 5 22:46:06 2014 REFERRER: http://test.schoolgennie.com/?page=message-message& SEARCHSTRING: page=login-signin& USERAGENT: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36LOGINID:
+IP: 117.197.148.39 TIME: Jan 5 22:49:55 2014 REFERRER: http://test.schoolgennie.com/?page=homework-view& SEARCHSTRING: page=login-signin& USERAGENT: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:26.0) Gecko/20100101 Firefox/26.0LOGINID:
+IP: 117.197.148.39 TIME: Jan 5 22:49:59 2014 REFERRER: http://test.schoolgennie.com/?page=login-signin& SEARCHSTRING: page=login-admin& USERAGENT: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:26.0) Gecko/20100101 Firefox/26.0LOGINID:
+IP: 117.197.148.39 TIME: Jan 5 22:50:02 2014 REFERRER: http://test.schoolgennie.com/?page=homework-view& SEARCHSTRING: page=login-signin& USERAGENT: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:26.0) Gecko/20100101 Firefox/26.0LOGINID:
+IP: 117.197.148.39 TIME: Jan 5 22:52:22 2014 REFERRER: http://test.schoolgennie.com/?page=login-signin& SEARCHSTRING: page=login-admin& USERAGENT: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:26.0) Gecko/20100101 Firefox/26.0LOGINID:
+IP: 117.197.148.39 TIME: Jan 5 22:53:32 2014 REFERRER: http://test.schoolgennie.com/?page=login-admin& SEARCHSTRING: page=login-signin& USERAGENT: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:26.0) Gecko/20100101 Firefox/26.0LOGINID:
+IP: 117.197.148.39 TIME: Jan 5 22:53:35 2014 REFERRER: http://test.schoolgennie.com/?page=login-signin& SEARCHSTRING: page=login-admin& USERAGENT: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:26.0) Gecko/20100101 Firefox/26.0LOGINID:
+IP: 117.197.148.39 TIME: Jan 5 22:53:42 2014 REFERRER: http://test.schoolgennie.com/?page=login-admin& SEARCHSTRING: page=login-ajax USERAGENT: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:26.0) Gecko/20100101 Firefox/26.0LOGINID:
+IP: 117.197.148.39 TIME: Jan 5 22:53:43 2014 REFERRER: http://test.schoolgennie.com/?page=login-admin& SEARCHSTRING: page=login-admin& USERAGENT: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:26.0) Gecko/20100101 Firefox/26.0LOGINID:
+IP: 117.197.148.39 TIME: Jan 5 22:53:43 2014 REFERRER: http://test.schoolgennie.com/?page=login-admin& SEARCHSTRING: page=login-admin& USERAGENT: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:26.0) Gecko/20100101 Firefox/26.0LOGINID:
+IP: 117.197.148.39 TIME: Jan 5 22:53:52 2014 REFERRER: http://test.schoolgennie.com/?page=login-admin& SEARCHSTRING: page=login-ajax USERAGENT: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:26.0) Gecko/20100101 Firefox/26.0LOGINID:
+IP: 117.197.148.39 TIME: Jan 5 22:53:52 2014 REFERRER: http://test.schoolgennie.com/?page=login-admin& SEARCHSTRING: page=login-admin& USERAGENT: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:26.0) Gecko/20100101 Firefox/26.0LOGINID:
+IP: 117.197.148.39 TIME: Jan 5 23:31:58 2014 REFERRER: http://test.schoolgennie.com/?page=dashboard-school& SEARCHSTRING: page=login-signin& USERAGENT: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:26.0) Gecko/20100101 Firefox/26.0LOGINID:
+IP: 117.197.148.39 TIME: Jan 5 23:32:02 2014 REFERRER: http://test.schoolgennie.com/?page=login-signin& SEARCHSTRING: page=login-admin& USERAGENT: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:26.0) Gecko/20100101 Firefox/26.0LOGINID:
+IP: 117.197.148.39 TIME: Jan 5 23:32:04 2014 REFERRER: http://test.schoolgennie.com/?page=login-admin& SEARCHSTRING: page=login-ajax USERAGENT: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:26.0) Gecko/20100101 Firefox/26.0LOGINID:
+IP: 117.197.148.39 TIME: Jan 5 23:32:05 2014 REFERRER: http://test.schoolgennie.com/?page=login-admin& SEARCHSTRING: page=login-admin& USERAGENT: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:26.0) Gecko/20100101 Firefox/26.0LOGINID:
+IP: 117.197.148.39 TIME: Jan 5 23:33:16 2014 REFERRER: http://test.schoolgennie.com/?page=message-message& SEARCHSTRING: page=login-signin& USERAGENT: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:26.0) Gecko/20100101 Firefox/26.0LOGINID:
+IP: 117.197.148.39 TIME: Jan 5 23:34:06 2014 REFERRER: http://test.schoolgennie.com/?page=login-signin& SEARCHSTRING: page=login-admin& USERAGENT: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:26.0) Gecko/20100101 Firefox/26.0LOGINID:
+IP: 117.197.148.39 TIME: Jan 5 23:34:10 2014 REFERRER: http://test.schoolgennie.com/?page=login-admin& SEARCHSTRING: page=login-ajax USERAGENT: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:26.0) Gecko/20100101 Firefox/26.0LOGINID:
+IP: 117.197.148.39 TIME: Jan 5 23:34:10 2014 REFERRER: http://test.schoolgennie.com/?page=login-admin& SEARCHSTRING: page=login-admin& USERAGENT: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:26.0) Gecko/20100101 Firefox/26.0LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 23:38:38 2014 REFERRER:  SEARCHSTRING: page=sgapp2/.errordocs/403 USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 23:38:38 2014 REFERRER:  SEARCHSTRING: page=sgapp2/.errordocs/403 USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 23:41:52 2014 REFERRER:  SEARCHSTRING: page=sgapp2/.errordocs/403 USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 23:41:52 2014 REFERRER:  SEARCHSTRING: page=sgapp2/.errordocs/403 USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 23:42:08 2014 REFERRER:  SEARCHSTRING: page=sgapp2/.errordocs/403 USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 23:42:08 2014 REFERRER:  SEARCHSTRING: page=sgapp2/.errordocs/403 USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 23:42:18 2014 REFERRER:  SEARCHSTRING: page=sgapp2/.errordocs/403 USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 23:42:18 2014 REFERRER:  SEARCHSTRING: page=sgapp2/.errordocs/403 USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 23:42:38 2014 REFERRER:  SEARCHSTRING: page=sgapp2/.errordocs/403 USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 23:42:38 2014 REFERRER:  SEARCHSTRING: page=sgapp2/.errordocs/403 USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 23:46:56 2014 REFERRER:  SEARCHSTRING: page=sgapp2/.errordocs/403 USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 23:46:56 2014 REFERRER:  SEARCHSTRING: page=sgapp2/.errordocs/403 USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 23:47:36 2014 REFERRER:  SEARCHSTRING: page=sgapp2/.errordocs/403 USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 23:47:36 2014 REFERRER:  SEARCHSTRING: page=sgapp2/.errordocs/403 USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 23:47:45 2014 REFERRER:  SEARCHSTRING: page=sgapp2/.errordocs/403 USERAGENT: LOGINID:
+IP: 50.62.103.1 TIME: Jan 5 23:47:45 2014 REFERRER:  SEARCHSTRING: page=sgapp2/.errordocs/403 USERAGENT: LOGINID:

@@ -1,0 +1,2 @@
+[2016-01-02 14:34:25] Logs.WARNING: Foo1 [] []
+[2016-01-02 14:34:25] Logs.ERROR: Duplicate column name 'school_id' [] []

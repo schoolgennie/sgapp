@@ -1,0 +1,327 @@
+<?
+display_message(1);
+display_form_error();
+#handle sections here.
+switch ($section):
+	case 'list':
+		?>
+		<table width="100%" cellspacing="0" cellpadding="2" align="center" style="border:solid 1px #dcdcdc;">
+			<tr>
+				<td colspan="6" class="table_cell">			
+				<?=PageControl($QueryObj->PageNo, $QueryObj->TotalPages, $QueryObj->TotalRecords, DIR_WS_SITE_CONTROL.'control.php', 'Page=user', 2);?>
+				</td>
+			</tr>
+			<tr>
+				<td class="table_head" width="5%">Sr.</td>
+                <td class="table_head" align="left" width="20%">Scool Code</td>
+				<td class="table_head" align="left" width="20%">Scool Name</td>
+				<td class="table_head" align="left" width="15%">Total Visit</td>
+				<td class="table_head" align="left" width="15%">Last Visit</td>
+				<td class="table_head" colspan="2" width="20%">Controls</td>
+			</tr>
+			<? $sr=(($QueryObj->PageNo-1)*$QueryObj->PageSize)+1;?>
+			<? while($QueryObj1=$QueryObj->GetObjectFromRecord()):?>
+			<tr>
+				<td class="table_cell" ><?=$sr++?>.</td>
+                <td class="table_cell" align="left"><?=$QueryObj1->school_code;?></td>
+				<td class="table_cell" align="left"><?=$QueryObj1->school_name;?></td>
+				<td class="table_cell" align="left"><?=$QueryObj1->school_total_visit;?></td>
+				<td class="table_cell" align="left"><?=$QueryObj1->school_last_visit;?></td>
+				<td class="table_cell"><a href="<?=make_admin_url('user','detail', 'detail', 'id='.$QueryObj1->school_id);?>"><?php echo get_control_icon('zoom')?></a></td>
+                <td class="table_cell"><a href="<?=make_admin_url('user','update', 'update', 'id='.$QueryObj1->school_id);?>"><?php echo get_control_icon('edit')?></a></td>
+				<?php /*?><td class="table_cell"><a href="<?=make_admin_url('user','delete', 'list', 'id='.$QueryObj1->school_id);?>"><?php echo get_control_icon('cancel')?></a></td>
+				<?php */?>
+			</tr>
+			<? endwhile;?>
+		</table>
+		<br/>
+		
+		<?
+		#html code here.
+		break;
+	case 'detail':
+		?>
+        <table width="100%" border="0" cellspacing="2" cellpadding="2" style="border:solid 1px #dcdcdc;" >
+		    <tr>
+				<td class="table_cell" width="40%">
+					<a href="<?=make_admin_url('user')?>">User Listing</a>&nbsp;|&nbsp;<?=$fetchData->school_name;?>
+				</td>
+				<td align="right" class="table_cell">
+				</td>
+				
+			</tr>
+			<tr>
+				<th class="table_head" colspan="2">User Details</th>
+			</tr>
+			<tr>
+				<td class="table_cell" align="left" valign="middle" width="20%"><strong>School Code</strong></td>
+				<td class="table_cell" align="left"><?=$fetchData->school_code;?></td>
+			</tr>
+			<tr>
+				<td class="table_cell" align="left" width="20%"><strong>School Name</strong></td>
+				<td class="table_cell" align="left"><?=$fetchData->school_name;?></td>
+			</tr>
+			<tr>
+				<td class="table_cell" align="left" width="20%"><strong>User Id</strong></td>
+				<td class="table_cell" align="left"><?=$fetchData->school_email_id;?></td>
+			</tr>
+			<tr>
+				<td class="table_cell" align="left" width="20%"><strong>Admin Name</strong></td>
+				<td class="table_cell" align="left"><?=$fetchData->school_admin_name;?></td>
+			</tr>
+            	<tr>
+				<td class="table_cell" align="left" width="20%"><strong>Affiliation No.</strong></td>
+				<td class="table_cell" align="left"><?=$fetchData->school_affiliation_no;?></td>
+			</tr>
+            	<tr>
+				<td class="table_cell" align="left" width="20%"><strong>Contact No. 1</strong></td>
+				<td class="table_cell" align="left"><?=$fetchData->school_phone1;?></td>
+			</tr>
+            	<tr>
+				<td class="table_cell" align="left" width="20%"><strong>Contact No. 2</strong></td>
+				<td class="table_cell" align="left"><?=$fetchData->school_phone2;?></td>
+			</tr>
+            <tr>
+				<td class="table_cell" align="left" width="20%"><strong>Email Id</strong></td>
+				<td class="table_cell" align="left"><?=$fetchData->school_email_official;?></td>
+			</tr>
+             <tr>
+				<td class="table_cell" align="left" width="20%"><strong>Fax</strong></td>
+				<td class="table_cell" align="left"><?=$fetchData->school_fax;?></td>
+			</tr>
+             <tr>
+				<td class="table_cell" align="left" width="20%"><strong>Average Fee</strong></td>
+				<td class="table_cell" align="left"><?=$fetchData->school_average_fee;?></td>
+			</tr>
+             <tr>
+				<td class="table_cell" align="left" width="20%"><strong>Student/Faculty</strong></td>
+				<td class="table_cell" align="left"><?=$fetchData->school_student_faculty_ratio;?></td>
+			</tr>
+             <tr>
+				<td class="table_cell" align="left" width="20%"><strong>Boy/Girl</strong></td>
+				<td class="table_cell" align="left"><?=$fetchData->school_boy_girl_ratio;?></td>
+			</tr>
+             <tr>
+				<td class="table_cell" align="left" width="20%"><strong>Country</strong></td>
+				<td class="table_cell" align="left"><?=$fetchData->school_country;?></td>
+			</tr>
+             <tr>
+				<td class="table_cell" align="left" width="20%"><strong>State</strong></td>
+				<td class="table_cell" align="left"><?=$fetchData->school_state;?></td>
+			</tr>
+             <tr>
+				<td class="table_cell" align="left" width="20%"><strong>City</strong></td>
+				<td class="table_cell" align="left"><?=$fetchData->school_city;?></td>
+			</tr>
+             <tr>
+				<td class="table_cell" align="left" width="20%"><strong>Address</strong></td>
+				<td class="table_cell" align="left"><?=$fetchData->school_address;?></td>
+			</tr>
+             <tr>
+				<td class="table_cell" align="left" width="20%"><strong>Description</strong></td>
+				<td class="table_cell" align="left"><?=$fetchData->school_description;?></td>
+			</tr>
+                       
+		</table>
+                <?
+		break;
+		case 'insert':
+		#html code here.
+		?>
+  <form id="frm" action="<?=make_admin_url('user', 'insert', 'list');?>" method="post" name="frm" enctype="multipart/form-data">
+  <table width="100%" border="0" cellspacing="2" cellpadding="2" style="border:solid 1px #dcdcdc;" >
+    <tr>
+      <td colspan="2" align="left"><?=make_admin_link(make_admin_url('user', 'list', 'list'), 'Back to School Listing')?></td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center" class="table_head">Add New School</td>
+    </tr>
+    <tr>
+      <td width="30%" align="left">School Code*</td>
+      <td width="75%" align="left"><input type="text" name="school_code" size="24" tabindex="1" maxlength="50"/></td>
+    </tr>
+    <tr>
+      <td width="30%" align="left">School Name*</td>
+      <td width="75%" align="left"><input type="text" name="school_name" size="24" tabindex="1" maxlength="200"/></td>
+    </tr>
+     <tr>
+      <td width="30%" align="left">User Id*</td>
+      <td width="75%" align="left"><input type="text" name="school_email_id" size="24" tabindex="1" maxlength="100"/></td>
+    </tr>
+     <tr>
+      <td width="30%" align="left">Admin Name*</td>
+      <td width="75%" align="left"><input type="text" name="school_admin_name" size="24" tabindex="1" maxlength="30"/></td>
+    </tr>
+     <tr>
+      <td width="30%" align="left">Affiliation No.*</td>
+      <td width="75%" align="left"><input type="text" name="school_affiliation_no" size="24" tabindex="1" maxlength="30"/></td>
+    </tr>
+     <tr>
+      <td width="30%" align="left">Contact No. 1</td>
+      <td width="75%" align="left"><input type="text" name="school_phone1" size="24" tabindex="1" maxlength="20"/></td>
+    </tr>
+     <tr>
+      <td width="30%" align="left">Contact No. 2</td>
+      <td width="75%" align="left"><input type="text" name="school_phone2" size="24" tabindex="1" maxlength="20"/></td>
+    </tr>
+    <tr>
+      <td width="30%" align="left">Email Id</td>
+      <td width="75%" align="left"><input type="text" name="school_email_official" size="24" tabindex="1" maxlength="50"/></td>
+    </tr>
+    <tr>
+      <td width="30%" align="left">Fax</td>
+      <td width="75%" align="left"><input type="text" name="school_fax" size="24" tabindex="1" maxlength="20"/></td>
+    </tr>
+    <tr>
+      <td width="30%" align="left">Average Fee</td>
+      <td width="75%" align="left"><input type="text" name="school_average_fee" size="24" tabindex="1" maxlength="20"/></td>
+    </tr>
+    <tr>
+      <td width="30%" align="left">Student/Faculty</td>
+      <td width="75%" align="left"><input type="text" name="school_student_faculty_ratio" size="24" tabindex="1" maxlength="20"/></td>
+    </tr>
+    <tr>
+      <td width="30%" align="left">Boy/Girl</td>
+      <td width="75%" align="left"><input type="text" name="school_boy_girl_ratio" size="24" tabindex="1" maxlength="20"/></td>
+    </tr>
+    <tr>
+      <td width="30%" align="left">Student License limit</td>
+      <td width="75%" align="left"><input type="text" name="school_student_create_limit" size="24" tabindex="1" maxlength="20"/></td>
+    </tr>
+    <tr>
+      <td width="30%" align="left">Message Limit</td>
+      <td width="75%" align="left"><input type="text" name="school_message_limit" size="24" tabindex="1" maxlength="20"/></td>
+    </tr>
+    <tr>
+      <td width="30%" align="left">Country*</td>
+      <td width="75%" align="left"><input type="text" name="school_country" size="24" tabindex="1" /></td>
+    </tr>
+    <tr>
+      <td width="30%" align="left">State*</td>
+      <td width="75%" align="left"><input type="text" name="school_state" size="24" tabindex="1" /></td>
+    </tr>
+    <tr>
+      <td width="30%" align="left">City*</td>
+      <td width="75%" align="left"><input type="text" name="school_city" size="24" tabindex="1" /></td>
+    </tr>
+     
+     <tr>
+      <td width="30%" align="left">School Address</td>
+      <td width="75%" align="left"><input type="text" name="school_address" size="24" tabindex="1" maxlength="200"/></td>
+    </tr>
+      <tr>
+      <td width="30%" align="left">Description</td>
+      <td width="75%" align="left"><textarea name="school_description" rows="5" cols="50"></textarea></td>
+    </tr>
+    
+	<tr>
+      <td width="30%" align="left"></td>
+      <td width="75%" align="left"><input type="submit" name="insert" value="Insert" tabindex="9" /></td>
+    </tr>
+  </table>
+</form>
+<?
+		break;
+	case 'update':
+		#html code here.
+		?>
+<form id="new_place" action="<?=make_admin_url('user', 'update', 'list', 'id='.$id.'&page='.$page);?>" method="post" name="new_place" enctype="multipart/form-data" onSubmit="return validateForm();"> 
+  <table width="100%" border="0" cellspacing="2" cellpadding="2" style="border:solid 1px #dcdcdc;" >
+    <tr>
+      <td colspan="2" align="left"><?=make_admin_link(make_admin_url('user', 'list', 'list','page='.$page), 'Back to school Listing')?></td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center" class="table_head">Update School Details</td>
+    </tr>
+     <tr>
+      <td width="30%" align="left">School Code*</td>
+      <td width="75%" align="left"><input type="text" name="school_code" size="24" tabindex="1" maxlength="50" value="<?=$fetchData->school_code?>"/></td>
+    </tr>
+     <tr>
+      <td width="30%" align="left">School Name*</td>
+      <td width="75%" align="left"><input type="text" name="school_name" size="24" tabindex="1" maxlength="200" value="<?=$fetchData->school_name?>"/></td>
+    </tr>
+     <tr>
+      <td width="30%" align="left">User Id*</td>
+      <td width="75%" align="left"><input type="text" name="school_email_id" size="24" tabindex="1" maxlength="100" value="<?=$fetchData->school_email_id?>"/></td>
+    </tr>
+      <tr>
+      <td width="30%" align="left">Admin Name*</td>
+      <td width="75%" align="left"><input type="text" name="school_admin_name" size="24" tabindex="1" maxlength="30" value="<?=$fetchData->school_admin_name?>"/></td>
+    </tr>
+     <tr>
+      <td width="30%" align="left">Affiliation No.*</td>
+      <td width="75%" align="left"><input type="text" name="school_affiliation_no" size="24" tabindex="1" maxlength="30" value="<?=$fetchData->school_affiliation_no?>"/></td>
+    </tr>
+     <tr>
+      <td width="30%" align="left">Contact No. 1</td>
+      <td width="75%" align="left"><input type="text" name="school_phone1" size="24" tabindex="1" maxlength="20" value="<?=$fetchData->school_phone1?>"/></td>
+    </tr>
+     <tr>
+      <td width="30%" align="left">Contact No. 2</td>
+      <td width="75%" align="left"><input type="text" name="school_phone2" size="24" tabindex="1" maxlength="20" value="<?=$fetchData->school_phone2?>"/></td>
+    </tr>
+    <tr>
+      <td width="30%" align="left">Email Id</td>
+      <td width="75%" align="left"><input type="text" name="school_email_official" size="24" tabindex="1" maxlength="50" value="<?=$fetchData->school_email_official?>"/></td>
+    </tr>
+    <tr>
+      <td width="30%" align="left">Fax</td>
+      <td width="75%" align="left"><input type="text" name="school_fax" size="24" tabindex="1" maxlength="20" value="<?=$fetchData->school_fax?>"/></td>
+    </tr>
+    <tr>
+      <td width="30%" align="left">Average Fee</td>
+      <td width="75%" align="left"><input type="text" name="school_average_fee" size="24" tabindex="1" maxlength="20" value="<?=$fetchData->school_average_fee?>"/></td>
+    </tr>
+    <tr>
+      <td width="30%" align="left">Student/Faculty</td>
+      <td width="75%" align="left"><input type="text" name="school_student_faculty_ratio" size="24" tabindex="1" maxlength="20" value="<?=$fetchData->school_student_faculty_ratio?>"/></td>
+    </tr>
+    <tr>
+      <td width="30%" align="left">Boy/Girl</td>
+      <td width="75%" align="left"><input type="text" name="school_boy_girl_ratio" size="24" tabindex="1" maxlength="20" value="<?=$fetchData->school_boy_girl_ratio?>"/></td>
+    </tr>
+     <tr>
+      <td width="30%" align="left">Student License limit</td>
+      <td width="75%" align="left"><input type="text" name="school_student_create_limit" size="24" tabindex="1" maxlength="20" value="<?=$fetchData->school_student_create_limit?>"/></td>
+    </tr>
+    <tr>
+      <td width="30%" align="left">Message Limit</td>
+      <td width="75%" align="left"><input type="text" name="school_message_limit" size="24" tabindex="1" maxlength="20" value="<?=$fetchData->school_message_limit?>"/></td>
+    </tr>
+    <tr>
+      <td width="30%" align="left">Country*</td>
+      <td width="75%" align="left"><input type="text" name="school_country" size="24" tabindex="1" value="<?=$fetchData->school_country?>"/></td>
+    </tr>
+    <tr>
+      <td width="30%" align="left">State*</td>
+      <td width="75%" align="left"><input type="text" name="school_state" size="24" tabindex="1" value="<?=$fetchData->school_state?>"/></td>
+    </tr>
+    <tr>
+      <td width="30%" align="left">City*</td>
+      <td width="75%" align="left"><input type="text" name="school_city" size="24" tabindex="1" value="<?=$fetchData->school_city?>"/></td>
+    </tr>
+     
+     <tr>
+      <td width="30%" align="left">School Address</td>
+      <td width="75%" align="left"><input type="text" name="school_address" size="24" tabindex="1" maxlength="200" value="<?=$fetchData->school_address?>"/></td>
+    </tr>
+      <tr>
+      <td width="30%" align="left">Description</td>
+      <td width="75%" align="left"><textarea name="school_description" rows="5" cols="50"><?=$fetchData->school_description?></textarea></td>
+    </tr>
+    <tr>
+      <td width="30%" align="left"></td>
+      <td width="75%" align="left"><input type="hidden" name="school_id" value="<?=$fetchData->school_id?>" />
+      <input type="submit" name="update" value="Update" tabindex="9" /></td>
+    </tr>
+  </table>
+</form>
+<?
+		break;
+	case 'delete':
+		#html code here.
+		break;
+	default:break;
+endswitch;
+?>

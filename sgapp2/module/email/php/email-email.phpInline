@@ -1,0 +1,269 @@
+<?
+echo 'test';
+$message='<!DOCTYPE html>
+<html lang="en" style="background: #fff;border: 0;outline: none;padding: 0;margin: 0;color: #2d3e52;font-family: \'Open Sans\', sans-serif;font-size: 80%;height: 100%;line-height: 1;width: 100%;">
+<head style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;">
+    <!-- Define Charset -->
+    <meta charset="iso-8859-1" style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;">
+
+   <!-- Page Title -->
+   <title style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;">Diploma - Responsive Bootstrap 3 Landing Page Template</title>
+
+   <!-- Responsive Metatag -->    
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;">
+
+   <!-- Page Description and Author -->
+   <meta name="description" content="Diploma - Responsive Bootstrap 3 Landing Page Template" style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;">
+   <meta name="author" content="Coralix Themes" style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;">
+
+   
+   <!-- Stylesheet
+   ===================================================================================================  -->
+
+    <!-- Bootstrap -->
+    
+    
+    <!-- Style -->
+    
+
+    <!-- Media-Queties -->
+    
+
+    <!-- Font icons -->
+    
+    <!--[if IE 7]>
+    <link href="font/fontello-ie7.css" rel="stylesheet" ><![endif]-->
+
+   <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+   <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>        
+   <![endif]-->
+
+   <!-- Media queries -->
+   <!--[if lt IE 9]>
+   <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+   <![endif]-->
+   <script src="http://demo.schoolgennie.com/module/email/js/modernizr.custom.js" style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;"></script>
+
+  </head>
+
+
+<body style="background: #fff;border: 0;outline: none;padding: 0;margin: 0;color: #2d3e52;font-family: \'Open Sans\', sans-serif;font-size: 80%;height: 100%;line-height: 1;width: 100%;">
+
+
+
+    <!-- slider -->
+    <section class="jumbotron" style="padding: 0;background: #fbaf41 url(http://demo.schoolgennie.com/module/email/css../img/bg.png) repeat 0 0;border: 0;outline: 0;margin: 0;color: #fff;margin-bottom: 0;padding-top: 200px;padding-bottom: 0;">
+		<div class="container" style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;"> 
+			<div class="row" style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;">
+				<div class="col-md-6" style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;">
+					<h1 style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;font-size: 3.3em;font-weight: 600;line-height: 1;font-family: \'Montserrat\', sans-serif;color: #fff;letter-spacing: -6px;text-shadow: 3px 3px 0px #fc9c20;">9 out of 10</h1>
+					<h2 style="background: transparent;border: 0;outline: 0;padding: 2% 0;margin: 4% 0;font-size: 1.2em;font-weight: 400;line-height: 1em;font-family: \'Montserrat\', sans-serif;color: #fff;border-top: 2px dotted #fff;border-bottom: 2px dotted #fff;letter-spacing: -1px;">schools struggle for a <br style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;">comprehensive integrated solution</h2>
+						<p style="background: transparent;border: 0;outline: 0;padding: 0;margin: 2% 0;font-size: 0.7em;font-weight: 400;line-height: 1.4;font-family: \'Open Sans\', sans-serif;color: #fff;">SCHOOLGENNIE is <strong style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;">ONE SOLUTION</strong> for all your needs. <br style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;">Absolutely <strong style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;">ZERO</strong> technical knowledge required to administer the system.<br style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;">Talk to our experts to know how SCHOOLGENNIE can help you.</p>
+					
+				</div>
+				<div class="col-md-6" style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;">
+					<img src="http://demo.schoolgennie.com/module/email/img/big-image.png" alt="image" class="figure" style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;width: 100%;">
+				</div>
+			</div>   
+		</div>
+    </section>
+    <!-- end slider -->
+
+
+
+   <!-- Features -->
+   <section id="menu-features" class="generic features" style="background: transparent;border: 0;outline: 0;padding: 90px 30px;margin: 0;">
+      <div class="container" style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;">
+
+         <!-- title -->
+         <div class="row text-center title" style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0 0 40px 0;">
+           <h1 style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;font-size: 2.6em;font-weight: 400;line-height: 1.3;font-family: \'Montserrat\', sans-serif;color: #fbaf41;letter-spacing: -1px;text-align: center;">Challenges of Going Online</h1>
+           <h2 style="background: url(http://demo.schoolgennie.com/module/email/css../img/line.gif) no-repeat scroll center 35px rgba(0, 0, 0, 0);border: 0;outline: 0;padding: 0;margin: 0;font-size: 1.4em;font-weight: 400;line-height: 1.8em;font-family: \'Open Sans\', sans-serif;color: #9d9fa2;letter-spacing: 1px;padding-bottom: 15px;">Mission: Develop a comprehensive and integrated solution for all school needs under a single system. The system should serve like a corporate Intranet that everyone can access any time for whatever they need.</h2>
+         </div>
+         <!-- end title -->
+
+                  <!-- items -->
+         <div class="row" style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;">
+
+            <div class="col-md-3 text-center item" style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;">
+           <!--    <i class="icon-pencil"></i>-->
+               <h3 style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;font-size: 1.7em;font-weight: 600;line-height: 3.5em;font-family: \'Open Sans\', sans-serif;color: #fbaf41;"> Replace Paper </h3>
+               <p style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;font-size: 1.4em;font-weight: 400;line-height: 1.6em;font-family: \'Open Sans\', sans-serif;color: #9d9fa2;"> Paper: an effective, but not efficient mode of communication. Can we replace this with an alternative which is less costly, more efficient and does not break the system?</p>
+            </div>
+
+            <div class="col-md-3 text-center item" style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;">
+              <!-- <i class="icon-lamp"></i>-->
+               <h3 style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;font-size: 1.7em;font-weight: 600;line-height: 3.5em;font-family: \'Open Sans\', sans-serif;color: #fbaf41;">School Website</h3>
+               <p style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;font-size: 1.4em;font-weight: 400;line-height: 1.6em;font-family: \'Open Sans\', sans-serif;color: #9d9fa2;"> Website means a marketing tool to showcase who you are and what are your offering. The more somebody is made to click and read through, the less effective it becomes. </p>
+            </div>
+
+            <div class="col-md-3 text-center item" style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;">
+          <!--     <i class="icon-brush"></i>-->
+               <h3 style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;font-size: 1.7em;font-weight: 600;line-height: 3.5em;font-family: \'Open Sans\', sans-serif;color: #fbaf41;">Email</h3>
+               <p style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;font-size: 1.4em;font-weight: 400;line-height: 1.6em;font-family: \'Open Sans\', sans-serif;color: #9d9fa2;">Schools have tried email and email groups, however, email spam poses a great challenge. And many times it is difficult for them to locate the email when they need it.</p>
+            </div>
+
+            <div class="col-md-3 text-center item" style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;">
+         <!--      <i class="icon-tools"></i>-->
+               <h3 style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;font-size: 1.7em;font-weight: 600;line-height: 3.5em;font-family: \'Open Sans\', sans-serif;color: #fbaf41;">Simple to Use</h3>
+               <p style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;font-size: 1.4em;font-weight: 400;line-height: 1.6em;font-family: \'Open Sans\', sans-serif;color: #9d9fa2;">For the system to be effective, it should be used by everyone. It should be easy to check/post information for parents as well as for school administrators and teachers.</p>
+            </div>
+            
+            <div class="col-md-3 text-center item" style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;">
+             <!--  <i class="icon-pencil"></i>-->
+               <h3 style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;font-size: 1.7em;font-weight: 600;line-height: 3.5em;font-family: \'Open Sans\', sans-serif;color: #fbaf41;"> Simple to Administer </h3>
+               <p style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;font-size: 1.4em;font-weight: 400;line-height: 1.6em;font-family: \'Open Sans\', sans-serif;color: #9d9fa2;"> Most schools do not have the technical resources or the budget to manage yet another system. Can there be a system which does not increase my budget on IT infrastructure.</p>
+            </div>
+
+            <div class="col-md-3 text-center item" style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;">
+             <!--  <i class="icon-lamp"></i>-->
+               <h3 style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;font-size: 1.7em;font-weight: 600;line-height: 3.5em;font-family: \'Open Sans\', sans-serif;color: #fbaf41;">Integrated: Single Login</h3>
+               <p style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;font-size: 1.4em;font-weight: 400;line-height: 1.6em;font-family: \'Open Sans\', sans-serif;color: #9d9fa2;"> It is difficult and time consuming to work on multiple system to collect information. Let there be a single solution that caters to entire school community for their different needs.</p>
+            </div>
+
+            <div class="col-md-3 text-center item" style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;">
+           <!--    <i class="icon-brush"></i>-->
+               <h3 style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;font-size: 1.7em;font-weight: 600;line-height: 3.5em;font-family: \'Open Sans\', sans-serif;color: #fbaf41;">Collaborative</h3>
+               <p style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;font-size: 1.4em;font-weight: 400;line-height: 1.6em;font-family: \'Open Sans\', sans-serif;color: #9d9fa2;">Device a collaborative platform where a school administrator can specify who receives what information by granting the respective individuals the appropriate privileges.</p>
+            </div>
+
+            <div class="col-md-3 text-center item" style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;">
+            <!--   <i class="icon-tools"></i>-->
+               <h3 style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;font-size: 1.7em;font-weight: 600;line-height: 3.5em;font-family: \'Open Sans\', sans-serif;color: #fbaf41;">Peace of Mind</h3>
+               <p style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;font-size: 1.4em;font-weight: 400;line-height: 1.6em;font-family: \'Open Sans\', sans-serif;color: #9d9fa2;">A system that can ensure accuracy of information that is accessible from anywhere – work, home or travel - 24 hours a day. No more decency on staff member. </p>
+            </div>
+
+
+         </div>
+         <!-- end items -->
+		 
+		 <div class="row" style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;">
+			<div class="col-xs-12 vertical_line text-center" style="background: url(http://demo.schoolgennie.com/module/email/css../img/vertical_line.png) no-repeat scroll center center rgba(0, 0, 0, 0);border: 0;outline: 0;padding: 0;margin: 80px auto 0 auto;">
+            	<a href="http://www.schoolgennie.com" class="btn scroll_btn" data-toggle="modal" style="background: #fbaf41;border: none;outline: none;padding: 10px 22px;margin: 0;text-decoration: none;-webkit-transition: background-color .3s ease, border .3s ease, color .3s ease, opacity .3s ease-in-out, outline .3s ease;-moz-transition: background-color .3s ease, border .3s ease, color .3s ease, opacity .3s ease-in-out, outline .3s ease;-ms-transition: background-color .3s ease, border .3s ease, color .3s ease, opacity .3s ease-in-out, outline .3s ease;-o-transition: background-color .3s ease, border .3s ease, color .3s ease, opacity .3s ease-in-out, outline .3s ease;transition: background-color .3s ease, border .3s ease, color .3s ease, opacity .3s ease-in-out, outline .3s ease;border-radius: 2px;color: #fff;font-size: 1.3em;margin-top: 0;box-shadow: none;">Request a quote now!</a>    
+            </div>
+                    
+        </div>
+      </div>     
+   </section>
+   <!-- end Features -->
+
+
+
+
+	<!-- howitworks -->
+	<section id="menu-information" class=" info" style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;padding-bottom: 0;">
+        <div class="container" style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;">
+        
+           <!-- title -->
+           <div class="row text-center title" style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0 0 40px 0;">
+           		<h1 style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;font-size: 2.6em;font-weight: 400;line-height: 1.3;font-family: \'Montserrat\', sans-serif;color: #fbaf41;letter-spacing: -1px;text-align: center;">Choose us</h1>
+           		<h2 style="background: url(http://demo.schoolgennie.com/module/email/css../img/line.gif) no-repeat scroll center 35px rgba(0, 0, 0, 0);border: 0;outline: 0;padding: 0;margin: 0;font-size: 1.4em;font-weight: 400;line-height: 1.8em;font-family: \'Open Sans\', sans-serif;color: #9d9fa2;letter-spacing: 1px;padding-bottom: 15px;">A hosted solution which needs no maintenance, almost negligible administration and absolutely no training.</h2>
+           </div>
+           <!-- end title -->
+                   
+           <div class="row infoitem" style="background: transparent;border: 0;outline: 0;padding: 0;margin: 90px 0;">
+           	  	<div class="col-md-6" style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;">
+           	  		<a class="example-image-link" style="background: transparent;border: 0;outline: none;padding: 0;margin: 0;text-decoration: none;-webkit-transition: background-color .3s ease, border .3s ease, color .3s ease, opacity .3s ease-in-out, outline .3s ease;-moz-transition: background-color .3s ease, border .3s ease, color .3s ease, opacity .3s ease-in-out, outline .3s ease;-ms-transition: background-color .3s ease, border .3s ease, color .3s ease, opacity .3s ease-in-out, outline .3s ease;-o-transition: background-color .3s ease, border .3s ease, color .3s ease, opacity .3s ease-in-out, outline .3s ease;transition: background-color .3s ease, border .3s ease, color .3s ease, opacity .3s ease-in-out, outline .3s ease;">
+                		<img src="http://demo.schoolgennie.com/module/email/img/howitworks-01.jpg" alt="image" style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;width: 100%;-webkit-transition: background-color .3s ease, border .3s ease, color .3s ease, opacity .3s ease-in-out, outline .3s ease;-moz-transition: background-color .3s ease, border .3s ease, color .3s ease, opacity .3s ease-in-out, outline .3s ease;-ms-transition: background-color .3s ease, border .3s ease, color .3s ease, opacity .3s ease-in-out, outline .3s ease;-o-transition: background-color .3s ease, border .3s ease, color .3s ease, opacity .3s ease-in-out, outline .3s ease;transition: background-color .3s ease, border .3s ease, color .3s ease, opacity .3s ease-in-out, outline .3s ease;">
+                	</a>
+                </div>
+                <div class="col-md-6" style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;">
+                	<h2 style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;font-size: 2.4em;font-weight: 600;line-height: 1.8em;font-family: \'Open Sans\', sans-serif;color: #fbaf41;letter-spacing: -1px;">One-Stop Solution for entire school community</h2>
+                    <p style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;font-size: 1.4em;font-weight: 400;line-height: 1.6em;font-family: \'Open Sans\', sans-serif;color: #9d9fa2;">All Information can be communicated through SCHOOLGENNIE saving school paper, effort and cost. SCHOOLGENNIE personalizes delivery of information. Every parent/school staff has a separate account. When a user logs in, SCHOOLGENNIE displays the information based on user’s profile. Each user sees only information relevant for him/her for the day in a concise manner in a single page.<br style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;">
+                    <br style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;">SCHOOLGENNIE information is accessible from anywhere – work, home or travel - 24 hours a day. No more calling the school office to get information.<br style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;">
+                    <br style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;">SCHOOLGENNIE is easy to use and requires minimal administration and training. No parent training is needed. It is as simple as an emailing program. A word like interface is available for entering information.</p>
+                    <!--<a href="#" class="btn btn-default">Read more</a>-->
+                </div>
+           </div>
+		          
+     
+                     
+    	</div>
+	</section>  
+	<!-- end howitworks -->
+
+
+    <!-- Classes Tables -->
+    <section id="features" style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;">
+        <div class="container" style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;">
+        
+          <!-- title -->
+          
+          <!-- end title -->
+
+          <div class="row" style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;">
+			<h3 style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;font-size: 1.7em;font-weight: 600;line-height: 3.5em;font-family: \'Open Sans\', sans-serif;color: #fbaf41;">Lets talk SAVINGS</h3>
+            <p style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;font-size: 1.4em;font-weight: 400;line-height: 1.6em;font-family: \'Open Sans\', sans-serif;color: #9d9fa2;">Did you know that using SCHOOLGENNIE can help save the planet?</p> 
+<p style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;font-size: 1.4em;font-weight: 400;line-height: 1.6em;font-family: \'Open Sans\', sans-serif;color: #9d9fa2;">SCHOOLGENNIE has helped schools go paperless in school communication saving significant time, labor and money.</p><br style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;">
+
+<p style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;font-size: 1.4em;font-weight: 400;line-height: 1.6em;font-family: \'Open Sans\', sans-serif;color: #9d9fa2;">Consider a school with 1000 families sending 2 sheets of paper per week for 40 weeks a year and spending 4 hours per week in printing, copying and stuffing envelopes. Each sheet of paper along with printing costs around Rs.1:</p><br style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;">
+<p style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;font-size: 1.4em;font-weight: 400;line-height: 1.6em;font-family: \'Open Sans\', sans-serif;color: #9d9fa2;">•	Total paper sent per family in a year = 2 * 40 = 80 sheets</p>
+<p style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;font-size: 1.4em;font-weight: 400;line-height: 1.6em;font-family: \'Open Sans\', sans-serif;color: #9d9fa2;">•	Total paper used for flyer/year = 80 * 1000 = 80,000 sheets</p>
+<p style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;font-size: 1.4em;font-weight: 400;line-height: 1.6em;font-family: \'Open Sans\', sans-serif;color: #9d9fa2;">•	Total paper & printing cost @Rs.1/sheet = 800,000 * Rs.1 = 80,000</p>
+<p style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;font-size: 1.4em;font-weight: 400;line-height: 1.6em;font-family: \'Open Sans\', sans-serif;color: #9d9fa2;">•	Number of hours spent in one year = 8 * 40 = 320 hours</p>
+<p style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;font-size: 1.4em;font-weight: 400;line-height: 1.6em;font-family: \'Open Sans\', sans-serif;color: #9d9fa2;">•	Labor cost for one year at Rs.10/hour = Rs.15 x 320 = Rs.4800</p>
+<p style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;font-size: 1.4em;font-weight: 400;line-height: 1.6em;font-family: \'Open Sans\', sans-serif;color: #9d9fa2;">•	Potential Savings = Rs.80,000 + Rs.4,800 = Rs.84,800</p>
+
+<br style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;"><p style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;font-size: 1.4em;font-weight: 400;line-height: 1.6em;font-family: \'Open Sans\', sans-serif;color: #9d9fa2;">Interested in going green at school? We support your efforts! It’s time to:</p>
+<p style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;font-size: 1.4em;font-weight: 400;line-height: 1.6em;font-family: \'Open Sans\', sans-serif;color: #9d9fa2;">•	Save Paper: Go Green</p>
+<p style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;font-size: 1.4em;font-weight: 400;line-height: 1.6em;font-family: \'Open Sans\', sans-serif;color: #9d9fa2;">•	Save Time: Communicate Online</p>
+<p style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;font-size: 1.4em;font-weight: 400;line-height: 1.6em;font-family: \'Open Sans\', sans-serif;color: #9d9fa2;"><h3 style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;font-size: 1.7em;font-weight: 600;line-height: 3.5em;font-family: \'Open Sans\', sans-serif;color: #fbaf41;">Save Money: Rs.84,800 expense reduced</h3></p>
+
+  
+
+        	</div> <!-- end row -->     
+			
+			<div class="row" style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;">
+				<div class="col-xs-12 vertical_line text-center" style="background: url(http://demo.schoolgennie.com/module/email/css../img/vertical_line.png) no-repeat scroll center center rgba(0, 0, 0, 0);border: 0;outline: 0;padding: 0;margin: 80px auto 0 auto;">
+            		<a href="#myModel" class="btn scroll_btn" data-toggle="modal" style="background: #fbaf41;border: none;outline: none;padding: 10px 22px;margin: 0;text-decoration: none;-webkit-transition: background-color .3s ease, border .3s ease, color .3s ease, opacity .3s ease-in-out, outline .3s ease;-moz-transition: background-color .3s ease, border .3s ease, color .3s ease, opacity .3s ease-in-out, outline .3s ease;-ms-transition: background-color .3s ease, border .3s ease, color .3s ease, opacity .3s ease-in-out, outline .3s ease;-o-transition: background-color .3s ease, border .3s ease, color .3s ease, opacity .3s ease-in-out, outline .3s ease;transition: background-color .3s ease, border .3s ease, color .3s ease, opacity .3s ease-in-out, outline .3s ease;border-radius: 2px;color: #fff;font-size: 1.3em;margin-top: 0;box-shadow: none;">Interested :)<br style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;">Get Free Trial</a>    
+            	</div>    
+        	</div>
+			              
+    	</div>
+    </section>  
+    <!-- end Classes Tables -->
+
+
+	
+
+
+
+
+
+
+    
+	<!-- Footer -->
+	<footer style="background: #bb3b11;border: 0;outline: 0;padding: 20px 0;margin: 0;color: #fff;">
+    	<div class="container" style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;">
+            <div class="row copy" style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;">
+            	<div class="col-sm-6" style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;">
+                	<h6 style="background: transparent;border: 0;outline: 0;padding: 0;margin: 8px auto;font-size: 1.2em;font-weight: 400;line-height: 1em;font-family: \'Open Sans\', sans-serif;color: #fff;">© 2014 Intelligence Simplified Solutions Pvt Ltd</h6>
+              </div>
+              <div class="col-sm-6" style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;">
+                
+              </div>
+            </div>
+            
+        </div>
+    </footer>   
+    <!-- end Footer --> 
+    
+    
+    
+    
+  <a href="#" class="scrollup" style="background: transparent url(http://demo.schoolgennie.com/module/email/css../img/to-top.png) center center no-repeat;border: 0;outline: none;padding: 0;margin: 0;text-decoration: none;-webkit-transition: background-color .3s ease, border .3s ease, color .3s ease, opacity .3s ease-in-out, outline .3s ease;-moz-transition: background-color .3s ease, border .3s ease, color .3s ease, opacity .3s ease-in-out, outline .3s ease;-ms-transition: background-color .3s ease, border .3s ease, color .3s ease, opacity .3s ease-in-out, outline .3s ease;-o-transition: background-color .3s ease, border .3s ease, color .3s ease, opacity .3s ease-in-out, outline .3s ease;transition: background-color .3s ease, border .3s ease, color .3s ease, opacity .3s ease-in-out, outline .3s ease;width: 50px;height: 50px;position: fixed;bottom: 80px;right: 30px;display: none;"><i class="icon-up-open" style="background: transparent;border: 0;outline: 0;padding: 0;margin: 0;position: relative;top: 1px;display: block;-webkit-font-smoothing: antialiased;font-style: normal;font-weight: normal;line-height: 48px;color: #fff;text-align: center;font-size: 20px;"></i></a>      
+
+
+
+    
+  
+
+
+</body>
+</html>
+
+';
+send_email('Website', 'navdeepsingla1@gmail.com',ADMIN_EMAIL, SITE_NAME, $message, '','html');
+echo 'test';
+?>

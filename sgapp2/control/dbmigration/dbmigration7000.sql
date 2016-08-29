@@ -1,0 +1,2 @@
+ALTER TABLE student_fee_history ADD  `student_fee_history_waver_status` int(4) NOT NULL DEFAULT '3' AFTER `student_fee_history_paid_amount`;
+ALTER TABLE student_fee_history ADD  `fee_waiver_category_id` int(4) NOT NULL AFTER `student_fee_history_paid_amount`;
